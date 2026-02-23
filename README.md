@@ -6,7 +6,7 @@ php, php-basics, beginner-project, web-development
 
 ---
 
-# 🚀 PHASE 1 — Web & Programming Foundation (Before PHP)
+# PHASE 1 — Web & Programming Foundation (Before PHP)
 
 ## 1️⃣ How Web Works
 
@@ -33,7 +33,7 @@ Before PHP:
 
 ---
 
-# 🟢 PHASE 2 — Core PHP (Beginner Level)
+# PHASE 2 — Core PHP (Beginner Level)
 
 ## Lesson 1 — PHP Basics
 
@@ -46,8 +46,6 @@ Before PHP:
 
 Practice:  
 Create `index.php` and print text.
-
----
 
 ## Lesson 2 — Variables & Data Types
 
@@ -65,16 +63,12 @@ $name = "Shanbel";
 $age = 20;
 ```
 
----
-
 ## Lesson 3 — Operators
 
 - Arithmetic
 - Comparison
 - Logical
 - Assignment
-
----
 
 ## Lesson 4 — Control Structures
 
@@ -87,8 +81,6 @@ $age = 20;
 Real Practice:  
 Build simple calculator.
 
----
-
 ## Lesson 5 — Arrays (Very Important)
 
 - Indexed arrays
@@ -96,8 +88,6 @@ Build simple calculator.
 - Multidimensional arrays
 
 Laravel uses arrays heavily.
-
----
 
 ## Lesson 6 — Functions
 
@@ -108,7 +98,7 @@ Laravel uses arrays heavily.
 
 ---
 
-# 🟡 PHASE 3 — Intermediate PHP
+# PHASE 3 — Intermediate PHP
 
 ## 7️⃣ Forms & Superglobals
 
@@ -155,7 +145,7 @@ Simple CRUD system.
 
 ---
 
-# 🔵 PHASE 4 — Advanced PHP (Professional Level)
+# PHASE 4 — Advanced PHP (Professional Level)
 
 ## 1️⃣1️⃣ Object-Oriented Programming (OOP)
 
@@ -187,8 +177,6 @@ Laravel is based on MVC.
 Flow:  
 User → Route → Controller → Model → View
 
----
-
 ## 1️⃣3️⃣ Security Concepts
 
 - SQL Injection prevention
@@ -196,8 +184,6 @@ User → Route → Controller → Model → View
 - XSS protection
 - CSRF protection
 - Password hashing
-
----
 
 ## 1️⃣4️⃣ REST API Basics
 
@@ -210,9 +196,7 @@ User → Route → Controller → Model → View
 Build:  
 Simple REST API in pure PHP.
 
----
-
-# 🔴 PHASE 5 — Composer & Modern PHP
+# PHASE 5 — Composer & Modern PHP
 
 Before Laravel:
 
@@ -223,21 +207,15 @@ Before Laravel:
 
 Laravel requires this.
 
----
-
-# 🟣 PHASE 6 — Laravel Framework (Beginner to Pro)
+# PHASE 6 — Laravel Framework (Beginner to Pro)
 
 Now we start Laravel.
-
----
 
 ## Step 1 — Install Laravel
 
 - Install Composer
 - Create project
 - Folder structure understanding
-
----
 
 ## Step 2 — Laravel Core Concepts
 
@@ -252,8 +230,6 @@ Now we start Laravel.
 
 ### 4. Models & Eloquent ORM
 
----
-
 ## Step 3 — Database in Laravel
 
 - Migrations
@@ -264,16 +240,12 @@ Now we start Laravel.
   - One to Many
   - Many to Many
 
----
-
 ## Step 4 — Authentication
 
 - Login
 - Register
 - Middleware
 - Role-based access
-
----
 
 ## Step 5 — Advanced Laravel
 
@@ -286,8 +258,6 @@ Now we start Laravel.
 - File storage
 - Mail system
 
----
-
 ## Step 6 — Professional Level
 
 - Service Container
@@ -297,9 +267,7 @@ Now we start Laravel.
 - Testing (PHPUnit)
 - Deployment
 
----
-
-# 🏗 Real World Project Path
+# Real World Project Path
 
 Build in order:
 
@@ -310,9 +278,7 @@ Build in order:
 5. E-commerce (Laravel)
 6. REST API + Frontend
 
----
-
-# 🧠 Timeline Suggestion
+# Timeline Suggestion
 
 - Core PHP → 3–4 weeks
 - OOP + MVC → 2 weeks
@@ -321,7 +287,7 @@ Build in order:
 
 ---
 
-# 🎯 Important Rule
+# Important Rule
 
 Before Laravel:
 You MUST be strong in:

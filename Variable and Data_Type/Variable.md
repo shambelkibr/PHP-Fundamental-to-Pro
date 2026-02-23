@@ -308,3 +308,5 @@ Store:
 - height (float)
 - isEmployed (boolean)
 - skills (array)
+
+

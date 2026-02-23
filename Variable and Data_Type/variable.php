@@ -11,6 +11,7 @@
 </html>
 
  <?php
+ 
     // Declaring variables in PHP
     $name = "DevSphere Company";
     $year = 2025;
