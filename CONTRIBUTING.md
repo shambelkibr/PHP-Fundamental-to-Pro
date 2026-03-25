@@ -106,12 +106,11 @@ PHP-Fundamental-to-Pro/
 Before submitting:
 
 ```bash
+
 # Test your PHP files
 php -l your-file.php  # Check for syntax errors
 php your-file.php     # Run the file
 
-# Or use PHP's built-in server
-php -S localhost:8000
 ```
 
 ### Pull Request Process
@@ -124,7 +123,7 @@ php -S localhost:8000
 
 ### Content Guidelines
 
-#### Do ✓
+#### Do 
 - Focus on educational value
 - Use real-world examples
 - Explain complex concepts simply

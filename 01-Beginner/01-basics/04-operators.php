@@ -1,11 +1,4 @@
 <?php
-/**
- * Operators in PHP
- * 
- * Operators are used to perform operations on variables and values.
- */
-
-echo "<h2>PHP Operators</h2>";
 
 // ARITHMETIC OPERATORS
 echo "<h3>1. Arithmetic Operators</h3>";

@@ -13,7 +13,7 @@
  * - Resource
  */
 
-echo "<h2>PHP Data Types</h2>";
+
 
 // STRING
 echo "<h3>1. String</h3>";

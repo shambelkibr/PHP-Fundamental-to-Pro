@@ -1,10 +1,5 @@
 <?php
-/**
- * Switch Statement
- * 
- * The switch statement is used to perform different actions based on different conditions.
- * It's an alternative to long if...elseif...else chains.
- */
+
 
 echo "<h2>Switch Statement</h2>";
 
@@ -154,15 +149,6 @@ switch ($color):
         echo "Invalid signal<br>";
 endswitch;
 
-// Switch vs If...Elseif
-echo "<br><h3>7. When to Use Switch vs If</h3>";
-echo "<strong>Use Switch when:</strong><br>";
-echo "- Testing the same variable against multiple values<br>";
-echo "- Values are discrete (specific values, not ranges)<br>";
-echo "- Makes code more readable<br>";
-echo "<br><strong>Use If...Elseif when:</strong><br>";
-echo "- Testing different conditions<br>";
-echo "- Using ranges or complex expressions<br>";
-echo "- Testing different variables<br>";
+
 
 ?>

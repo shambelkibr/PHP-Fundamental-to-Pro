@@ -1,9 +1,5 @@
 <?php
-/**
- * If...Else Statements
- * 
- * Conditional statements allow you to execute different code based on conditions.
- */
+
 
 echo "<h2>If...Else Statements</h2>";
 
@@ -65,12 +61,6 @@ echo "Age: $age, Can vote: $canVote<br>";
 $num = 0;
 $result = ($num > 0) ? "positive" : (($num < 0) ? "negative" : "zero");
 echo "Number $num is $result<br>";
-
-// Null coalescing operator (PHP 7+)
-echo "<br><h3>6. Null Coalescing Operator</h3>";
-$username = null;
-$display = $username ?? "Guest";
-echo "Username: $display<br>";
 
 // Spaceship operator with if (PHP 7+)
 echo "<br><h3>7. Spaceship Operator</h3>";

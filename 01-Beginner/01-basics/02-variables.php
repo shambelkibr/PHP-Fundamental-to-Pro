@@ -1,12 +1,4 @@
 <?php
-/**
- * Variables in PHP
- * 
- * Variables are containers for storing data values.
- * In PHP, a variable starts with the $ sign, followed by the name.
- */
-
-echo "<h2>Working with Variables</h2>";
 
 // Variable declaration and initialization
 $name = "John Doe";

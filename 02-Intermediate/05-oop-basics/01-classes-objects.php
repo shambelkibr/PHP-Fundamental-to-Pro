@@ -1,12 +1,7 @@
 <?php
-/**
- * Classes and Objects in PHP
- */
-
-echo "<h2>Classes and Objects</h2>";
 
 // Basic class definition
-echo "<h3>1. Basic Class</h3>";
+
 class Person {
     // Properties
     public $name;
@@ -27,10 +22,10 @@ echo $person1->introduce() . "<br>";
 $person2 = new Person();
 $person2->name = "Bob";
 $person2->age = 30;
-echo $person2->introduce() . "<br>";
+
 
 // Class with constructor
-echo "<br><h3>2. Class with Constructor</h3>";
+
 class Car {
     public $brand;
     public $model;
@@ -74,7 +69,7 @@ echo "10 - 4 = " . $calc->subtract(10, 4) . "<br>";
 echo "6 × 7 = " . $calc->multiply(6, 7) . "<br>";
 
 // Class constants
-echo "<br><h3>4. Class Constants</h3>";
+
 class MathHelper {
     const PI = 3.14159;
     const E = 2.71828;
@@ -89,7 +84,7 @@ $math = new MathHelper();
 echo "Circle area (radius 5): " . $math->circleArea(5) . "<br>";
 
 // Practical example: Bank Account
-echo "<br><h3>5. Practical Example: Bank Account</h3>";
+
 class BankAccount {
     public $accountNumber;
     public $holderName;

@@ -35,3 +35,4 @@ logs/
 *.sql
 *.sqlite
 *.db
+LICENSE
