@@ -1,5 +1,3 @@
-
-
 ## Lab Practice Questions
 
 ### 1. Write PHP code to read JSON file
@@ -72,35 +70,19 @@ echo "Data written to user.json";
 
 #### Form.html
 
-```html
+````html
 <form action="file.php" method="post">
-First Name:<input type="text" name="fname"><br>
-Second Name:<input type="text" name="lname"><br>
-Email:<input type="text" name="email"><br>
-<input type="submit" name="submit" value="Submit">
+  First Name:<input type="text" name="fname" /><br />
+  Second Name:<input type="text" name="lname" /><br />
+  Email:<input type="text" name="email" /><br />
+  <input type="submit" name="submit" value="Submit" />
 </form>
-```
-
-#### file.php
-
-```php
-<?php
-$fname=$_POST["fname"];
-$lname=$_POST["lname"];
-$mail=$_POST["email"];
-
-$fh= fopen("guest.txt", "w+");
-
-if(!$fh)
-echo "the info is not saved, the file doesn't exists";
-else {
-fwrite($fh, $fname."\t".$lname."\t".$mail."\t");
-echo "<br />";
-echo "your data is Saved!!"."<br/>";
-fclose($fh);
-}
-?>
-```
+``` #### file.php ```php <?php $fname=$_POST["fname"]; $lname=$_POST["lname"];
+$mail=$_POST["email"]; $fh= fopen("guest.txt", "w+"); if(!$fh) echo "the info is
+not saved, the file doesn't exists"; else { fwrite($fh,
+$fname."\t".$lname."\t".$mail."\t"); echo "<br />"; echo "your data is
+Saved!!"."<br />"; fclose($fh); } ?>
+````
 
 ---
 
@@ -114,18 +96,18 @@ Practice reading and writing XML files on your own.
 
 Debre Berhan University (DBU) has four research centers:
 
-* Livestock
-* Soil
-* Shewarobit
-* Ankober
+- Livestock
+- Soil
+- Shewarobit
+- Ankober
 
 The centers coordinator has planned to deploy IoT sensors to monitor soil moisture, temperature, and humidity in different plots of land. The data will be sent periodically to a central server.
 
 As a Software Engineer, design a MySQL database and write PHP code to:
 
-* Insert new sensor readings
-* Display the latest 10 readings
-* Display average temperature, humidity, and soil moisture for each plot
+- Insert new sensor readings
+- Display the latest 10 readings
+- Display average temperature, humidity, and soil moisture for each plot
 
 Practice both procedural and object-oriented programming styles in PHP.
 
