@@ -1,8 +1,9 @@
 <?php
 
-    $hostname = "127.0.0.1";
-    $username = "shanbelkibre";
-    $password = "Sha2025db@";
+    
+    $hostname = $_ENV['DB_HOST'];
+    $username = $_ENV['DB_USER'];
+    $password = $_ENV['DB_PASSWORD'];
 
     try{
         $dbc =  new PDO ("mysql:host=$hostname;dbname=myDb", $username, $password);

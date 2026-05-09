@@ -25,6 +25,7 @@ composer.lock
 .env
 .env.local
 
+
 # Project specific
 sessions/
 uploads/
