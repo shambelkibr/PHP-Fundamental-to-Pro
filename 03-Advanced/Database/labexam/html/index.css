@@ -1,0 +1,20 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+#main {
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+  background: #c28b8b;
+}
+#navbar {
+  display: flex;
+  gap: 800px; /* space between links */
+}
+#navbar a {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+}

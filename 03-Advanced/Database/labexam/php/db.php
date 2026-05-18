@@ -35,4 +35,10 @@ $password = "Sha2025db@";
         FOREIGN KEY (student_id) REFERENCES student(student_id)
     )");
 
+    $dbc->query("CREATE TABLE IF NOT EXISTS users (
+    id       INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50)  NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL
+    );");
+
 ?>

@@ -2,17 +2,25 @@
 <html>
   <head>
     <title>Student Registration</title>
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <h2>Student Registration Form</h2>
+    <nav id="navbar">
+      <a href="#">HOME</a>
+      <a href="login.html">LOGIN</a>
+      <a href="#">Register</a>
+    </nav>
+    <div id="main">
+      <h2>Student Registration Form</h2>
 
-    <form action="../php/insert_student.php" method="POST">
-      Name: <input type="text" name="student_name" required /><br /><br />
-      Email: <input type="email" name="email" required /><br /><br />
-      Phone: <input type="text" name="phone" required /><br /><br />
-      Department: <input type="text" name="department" required /><br /><br />
-      Year: <input type="number" name="year" required /><br /><br />
-      <input type="submit" value="Register Student" />
-    </form>
+      <form action="../php/insert_student.php" method="POST">
+        Name: <input type="text" name="student_name" required /><br /><br />
+        Email: <input type="email" name="email" required /><br /><br />
+        Phone: <input type="text" name="phone" required /><br /><br />
+        Department: <input type="text" name="department" required /><br /><br />
+        Year: <input type="number" name="year" required /><br /><br />
+        <input type="submit" value="Register Student" />
+      </form>
+    </div>
   </body>
 </html>
