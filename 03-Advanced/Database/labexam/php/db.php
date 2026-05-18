@@ -9,11 +9,12 @@ $password = "Sha2025db@";
         die("Connection failed: " . $dbc->connect_error);
     }
 
-    
+
     // Create database
     $dbc->query("CREATE DATABASE IF NOT EXISTS LAB_EXAM");
     $dbc->select_db("LAB_EXAM");
 
+    
     // Create student table
     $dbc->query("CREATE TABLE IF NOT EXISTS student (
         student_id   INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
@@ -23,6 +24,7 @@ $password = "Sha2025db@";
         department   VARCHAR(100) NOT NULL,
         year         YEAR         NOT NULL
     )");
+
 
     // Create project table
     $dbc->query("CREATE TABLE IF NOT EXISTS project (

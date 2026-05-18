@@ -14,18 +14,8 @@
     Project Code: <input type="text" name="project_code" required><br><br>
     Project Name: <input type="text" name="project_name" required><br><br>
     Hourly Rate:  <input type="datetime-local" name="hourly_rate" required><br><br>
-
-    Student:
-    <select name="student_id" required>
-        <option value="">-- Select Student --</option>
-        <?php
-        $students = $dbc->query("SELECT student_id, student_name FROM student");
-        while ($row = $students->fetch_assoc()):
-        ?>
-        <option value="<?= $row['student_id'] ?>"><?= $row['student_name'] ?></option>
-        <?php endwhile; ?>
-    </select><br><br>
-
+    Studen_id:  <input type="text" name="student_id" required><br><br>
+   
     <input type="submit" value="Register Project">
 </form>
 

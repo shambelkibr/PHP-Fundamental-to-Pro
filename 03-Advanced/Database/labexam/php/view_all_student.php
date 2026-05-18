@@ -41,6 +41,7 @@ $result = $dbc->query($sql);
         <td><?= $row['department'] ?></td>
         <td><?= $row['hourly_rate'] ?></td>
     </tr>
+    
     <?php endwhile; ?>
 
 </table>
