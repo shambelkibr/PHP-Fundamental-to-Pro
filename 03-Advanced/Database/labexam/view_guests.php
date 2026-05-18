@@ -2,17 +2,16 @@
 require 'db.php';
 
 $result = $dbc->query("SELECT * FROM student_table");
-
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
-    <title>View Guests</title>
+    <title>View Students</title>
 </head>
 <body>
 
-<h2>All Guests</h2>
+<h2>All Students</h2>
 
 <table border="1">
     <tr>
@@ -20,7 +19,7 @@ $result = $dbc->query("SELECT * FROM student_table");
         <th>First Name</th>
         <th>Last Name</th>
         <th>Email</th>
-        <th>Registered</th>
+        <th>Department</th>
     </tr>
 
     <?php while ($row = $result->fetch_assoc()): ?>
@@ -29,14 +28,14 @@ $result = $dbc->query("SELECT * FROM student_table");
         <td><?= $row['firstname'] ?></td>
         <td><?= $row['lastname'] ?></td>
         <td><?= $row['email'] ?></td>
-        <td><?= $row['reg_Date'] ?></td>
+        <td><?= $row['department'] ?></td>
     </tr>
     <?php endwhile; ?>
 
 </table>
 
 <br>
-<a href="insert_guest.php">Add New Guest</a>
+<a href="insert_guest.html">Add New Student</a>
 
 </body>
 </html>
