@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="process.php" method="POST">
+
+  <!-- Name -->
+  <label>Full Name *</label>
+  <input type="text" name="name" value="<?php echo $name; ?>">
+  <span style="color:red"><?php echo $nameErr; ?></span>
+
+  <!-- Email -->
+  <label>Email *</label>
+  <input type="text" name="email" value="<?php echo $email; ?>">
+  <span style="color:red"><?php echo $emailErr; ?></span>
+
+  <!-- Gender -->
+  <label>Gender *</label>
+  <input type="radio" name="gender" value="Male">   Male
+  <input type="radio" name="gender" value="Female"> Female
+  <span style="color:red"><?php echo $genderErr; ?></span>
+
+  <!-- Message -->
+  <label>Message (optional)</label>
+  <textarea name="message"><?php echo $message; ?></textarea>
+  <span style="color:red"><?php echo $msgErr; ?></span>
+
+  <button type="submit">Submit</button>
+</form>
+</body>
+</html>

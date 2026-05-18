@@ -1,18 +1,17 @@
 <?php
 
-    
-    $hostname = $_ENV['DB_HOST'];
-    $username = $_ENV['DB_USER'];
-    $password = $_ENV['DB_PASSWORD'];
+    $hostname = "127.0.0.1";      
+    $username = "shanbelkibre";
+    $password = "Sha2025db@";
+    $database = "house_rental";  
 
-    try{
-        $dbc =  new PDO ("mysql:host=$hostname;dbname=myDb", $username, $password);
-        echo "successfully connected";
+    try {
+        $conn = new PDO("mysql:host=$hostname;dbname=$database;charset=utf8mb4", $username, $password);
+        echo "Connection successful!";
 
-    }catch(PDOException $e){
-        echo "error connecction is failed ", $e->getMessage();
-
+    } catch (PDOException $e) {
+        echo "Connection failed: " . $e->getMessage();
     }
-
+    $conn = null;
 
 ?>
