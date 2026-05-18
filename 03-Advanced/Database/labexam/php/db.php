@@ -8,9 +8,10 @@ $dbc = new mysqli($hostname, $username, $password);
 if ($dbc->connect_error) {
     die("Connection failed: " . $dbc->connect_error);
 }
-
 echo "successfully connected <br> <br>";
 
+
+//  create Database
 $sql = "CREATE DATABASE IF NOT EXISTS STUDENT";
 $result = $dbc->query($sql);
 
@@ -20,6 +21,9 @@ if ($result == true) {
     echo "Database create failed: " . $dbc->error;
 }
 
+
+
+// create table
 $dbc->select_db("STUDENT");
 
 $sql = "CREATE TABLE IF NOT EXISTS student_table(

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Insert Project</title>
+</head>
+<body>
+
+<h2>Add Project</h2>
+
+<form action="insert_project.php" method="POST">
+    Project Name: <input type="text"   name="project_name" required><br><br>
+    Hourly Rate:  <input type="number" name="hourly_rate" step="0.01" min="0" required><br><br>
+    <input type="submit" value="Add Project">
+</form>
+
+<br>
+<a href="view_projects.php">View All Projects</a>
+
+</body>
+</html>

@@ -35,7 +35,7 @@ $result = $dbc->query("SELECT * FROM student_table");
 </table>
 
 <br>
-<a href="insert_guest.html">Add New Student</a>
+<a href="../html/insert_guest.html">Add New Student</a>
 
 </body>
 </html>
