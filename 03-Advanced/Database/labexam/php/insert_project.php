@@ -1,25 +1,34 @@
-<?php
-require 'db.php';
+<?php require 'db.php'; ?>
 
-// Create table if not exists
-$dbc->query("CREATE TABLE IF NOT EXISTS PROJECT (
-    project_id   INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    project_name VARCHAR(100) NOT NULL,
-    hourly_rate  DECIMAL(10,2) NOT NULL
-)");
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project Registration</title>
+</head>
+<body>
 
-$project_name = $dbc->real_escape_string($_POST['project_name']);
-$hourly_rate  = floatval($_POST['hourly_rate']);
+<h2>Project Registration Form</h2>
 
-$sql = "INSERT INTO PROJECT (project_name, hourly_rate) 
-        VALUES ('$project_name', $hourly_rate)";
 
-if ($dbc->query($sql)) {
-    echo "Project added successfully!<br>";
-} else {
-    echo "Error: " . $dbc->error . "<br>";
-}
+<form action="save_project.php" method="POST">
+    Project Code: <input type="text" name="project_code" required><br><br>
+    Project Name: <input type="text" name="project_name" required><br><br>
+    Hourly Rate:  <input type="datetime-local" name="hourly_rate" required><br><br>
 
-echo "<a href='insert_project.html'>Go Back</a> | ";
-echo "<a href='view_projects.php'>View Projects</a>";
-?>
+    Student:
+    <select name="student_id" required>
+        <option value="">-- Select Student --</option>
+        <?php
+        $students = $dbc->query("SELECT student_id, student_name FROM student");
+        while ($row = $students->fetch_assoc()):
+        ?>
+        <option value="<?= $row['student_id'] ?>"><?= $row['student_name'] ?></option>
+        <?php endwhile; ?>
+    </select><br><br>
+
+    <input type="submit" value="Register Project">
+</form>
+
+
+</body>
+</html>
