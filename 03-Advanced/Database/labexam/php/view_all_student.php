@@ -42,9 +42,11 @@ $result = $dbc->query($sql);
         <td><?= $row['hourly_rate'] ?></td>
     </tr>
     
-    <?php endwhile; ?>
+    <?php endwhile ?>
 
 </table>
 
 </body>
 </html>
+
+

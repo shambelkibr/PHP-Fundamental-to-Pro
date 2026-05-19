@@ -7,17 +7,17 @@
 </head>
 <body>
 
-<h2>Project Registration Form</h2>
+    <h2>Project Registration Form</h2>
 
 
-<form action="save_project.php" method="POST">
-    Project Code: <input type="text" name="project_code" required><br><br>
-    Project Name: <input type="text" name="project_name" required><br><br>
-    Hourly Rate:  <input type="datetime-local" name="hourly_rate" required><br><br>
-    Studen_id:  <input type="text" name="student_id" required><br><br>
-   
-    <input type="submit" value="Register Project">
-</form>
+    <form action="save_project.php" method="POST">
+        Project Code: <input type="text" name="project_code" required><br><br>
+        Project Name: <input type="text" name="project_name" required><br><br>
+        Hourly Rate:  <input type="datetime-local" name="hourly_rate" required><br><br>
+        Studen_id:  <input type="text" name="student_id" required><br><br>
+    
+        <input type="submit" value="Register Project">
+    </form>
 
 
 </body>

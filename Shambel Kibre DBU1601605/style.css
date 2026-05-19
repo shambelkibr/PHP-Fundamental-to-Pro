@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    padding: 20px;
+}
+
+form {
+    background: white;
+    width: 800px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+h2 {
+    color: #333;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background: green;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: darkgreen;
+}
+
+
+
+h1 {
+    color: darkgreen;
+    text-align: center;
+}
+
+.menu {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.menu a {
+    display: inline-block;
+    padding: 12px 18px;
+    margin: 10px;
+    background: green;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.menu a:hover {
+    background: darkgreen;
+}
+
+hr {
+    margin: 20px;
+}

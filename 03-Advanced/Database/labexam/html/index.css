@@ -1,20 +1,26 @@
 body {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
-#main {
-  margin: 20px;
-  padding: 10px;
-  text-align: center;
-  background: #c28b8b;
-}
+
 #navbar {
   display: flex;
-  gap: 800px; /* space between links */
+  justify-content: space-around;
+  align-items: center;
+  background-color: aqua;
+  padding: 15px;
 }
+
 #navbar a {
   text-decoration: none;
-  display: flex;
-  justify-content: space-between;
+  color: black;
+  font-size: 18px;
+}
+
+#main {
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  background-color: #c28b8b;
 }

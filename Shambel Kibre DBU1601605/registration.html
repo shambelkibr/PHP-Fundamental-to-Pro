@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Disease Registration Form</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h2>Disease Registration Form (Shambel kibre Alemayehu DBU1601605 )</h2>
+
+    <form action="save.php" method="POST">
+      <label for="cow_id">Cow ID</label>
+      <input
+        type="number"
+        id="cow_id"
+        name="Cow_id"
+        placeholder="Enter Cow ID"
+        required
+      /><br /><br />
+
+      <label for="d_name">Disease Name</label>
+      <input
+        type="text"
+        id="d_name"
+        name="D_Name"
+        placeholder="Enter Disease Name"
+        required
+      /><br /><br />
+
+      <label for="symptoms">Symptoms</label>
+      <textarea
+        id="symptoms"
+        name="Symptoms"
+        placeholder="Enter Symptoms"
+        required
+      ></textarea
+      ><br /><br />
+
+      <label for="diagnosis_date">Diagnosis Date</label>
+      <input
+        type="datetime-local"
+        id="diagnosis_date"
+        name="Dignosis_Date"
+        required
+      /><br /><br />
+
+      <!-- Treatment -->
+      <label for="treatment">Treatment</label>
+      <textarea
+        id="treatment"
+        name="Treatment"
+        placeholder="Enter Treatment"
+        required
+      ></textarea>
+
+      <!-- Store Date -->
+      <label for="store_date">Store Date</label>
+      <input
+        type="datetime-local"
+        id="store_date"
+        name="Store_DATE"
+        required
+      /><br /><br />
+
+      <!-- Submit Button -->
+      <button type="submit">Save Disease Record</button>
+    </form>
+  </body>
+</html>
