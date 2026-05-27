@@ -17,8 +17,10 @@ echo "<p>PHP stands for Hypertext Preprocessor</p>";
 echo "You can ", "echo ", "multiple ", "strings!";
 echo "<br>";
 
-// PHP info (uncomment to see PHP configuration)
-// phpinfo();
+$arr=["PHP", "is", "fun!"];
+print_r ($arr); // Output array structure
+
+
 
 ?>
 
